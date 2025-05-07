@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebDev With HIT</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Webdev with Health IT</title>
   </head>
   <body>
-    <!-- SESSION 1: BASIC STRUCTURE -->
-    <!-- Basic heading and paragraph structure -->
-    <h1 id="main-header">Welcome to My Page</h1>
-    <h2>About Me</h2>
-    <p>
-      Hello! This is my first web page. I'm learning HTML and CSS to become a
-      web developer.
-    </p>
+    <h1>Health IT</h1>
+    <div id="Introduction" class="Section">
+      <h2>Introduction</h2>
+      <p>
+        Health IT is a medical club based in the university of constantine 3
+      </p>
+    </div>
+    <div class="Section">
+      <h2>Activities</h2>
+      <ol>
+        <li>Health IT organized webdev sessions</li>
+        <li>Health IT created a QCMs calculator website application</li>
+        <li>Health IT won the third place in devfest hackathon 2024</li>
+      </ol>
+    </div>
+    <h2>Fouding Members</h2>
+    <ul>
+      <li>Marouane</li>
+      <li>Mounir</li>
+      <li>Zakaria</li>
+      <li>Adib</li>
+      <li>Abdou</li>
+    </ul>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+      <br />
+      <label for="nmbr">Phone number:</label>
+      <input type="number" id="nmbr" />
+      <br />
+      <label for="TOS">I accept the TOS</label>
+      <input type="checkbox" id="TOS" />
+      <br />
+      <label for="favfood">My favorite food</label>
+      <textarea id="favfood"></textarea>
+      <br />
+      <label for="autoComplete">Speciality:</label>
+      <input list="tests" id="autoComplete" name="autoComplete" type="text" />
+      <datalist id="tests">
+        <option value="Medecine"></option>
+        <option value="Chirdent"></option>
+        <option value="Pharmacie"></option>
+      </datalist>
 
-    <!-- SESSION 1: IMAGES -->
-    <!-- 
-    <h2>My Profile Picture</h2>
-    <img src="../images/Tech Office.jpg" alt="My profile picture" width="200">
-    -->
-
-    <!-- SESSION 1: LINKS -->
-    <!--
-    <h2>My Favorite Websites</h2>
-    <p>Check out <a href="https://www.example.com">my favorite website</a>!</p>
-    -->
-
-    <footer>
-      <p>&copy; 2025 Web Dev with HIT</p>
-    </footer>
+      <br />
+    </form>
+    <a href="https://linktr.ee/Health._it" target="_blank">
+      <img src="./Tech Office.jpg" width="400" alt="Tech Office Logo" />
+    </a>
   </body>
+  <footer><p>&copy; 2025 Webdev with Health IT</p></footer>
 </html>
